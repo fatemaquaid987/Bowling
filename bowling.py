@@ -17,13 +17,13 @@ mygame = pyglet.window.Window(800, 710,                     # setting window
               )                                             # Calling base class constructor
 mygame.set_location(screen.width // 2 - 200,screen.height//2 - 350)
  
-bimage = pyglet.resource.image('ball2.png')                 # Image for brick
+bimage = pyglet.resource.image('media/ball2.png')                 # Image for brick
 bimage.anchor_x= bimage.width/2
 bimage.anchor_y=bimage.height/2
 ballsprite= pyglet.sprite.Sprite(bimage, 400, 60)
 
-bgimage= pyglet.resource.image('bac.png')
-pinimage = pyglet.resource.image('pin5.png')
+bgimage= pyglet.resource.image('media/bac.png')
+pinimage = pyglet.resource.image('media/pin5.png')
 #pinimage.anchor_x=pinimage.width/2
 pin1sprite =  pyglet.sprite.Sprite(pinimage, 300, 530)
 pin2sprite =  pyglet.sprite.Sprite(pinimage, 334, 530)
@@ -35,32 +35,32 @@ pin7sprite =  pyglet.sprite.Sprite(pinimage, 386, 520)
 pin8sprite =  pyglet.sprite.Sprite(pinimage, 336, 510)
 pin9sprite =  pyglet.sprite.Sprite(pinimage, 370, 510)
 pin10sprite =  pyglet.sprite.Sprite(pinimage, 354, 500)
-arrowimage= pyglet.resource.image('arrow4.png')
+arrowimage= pyglet.resource.image('media/arrow4.png')
 arrowimage.anchor_x= arrowimage.width/2
 arrowsprite = pyglet.sprite.Sprite(arrowimage, 400, 60)
 
-inst=pyglet.resource.image('help.png')
+inst=pyglet.resource.image('media/help.png')
 instsprite=pyglet.sprite.Sprite(inst, 0, 0)                 # sprite for help an instructions
 instsprite.visible=False
 
-menuimage = pyglet.resource.image('menu.png')
+menuimage = pyglet.resource.image('media/menu.png')
 menusprite = pyglet.sprite.Sprite(menuimage, 0, 0)          # sprite for menu
 menusprite.visible= True
 
 
-abcimage=pyglet.resource.image('abc.png')                   #shutter sprite            
+abcimage=pyglet.resource.image('media/abc.png')                   #shutter sprite            
 abcsprite= pyglet.sprite.Sprite(abcimage, 220, 620)
 abcsprite.visible=False
 
-scoreboard=pyglet.resource.image('scoreboard.png')           #scoreboard sprite
+scoreboard=pyglet.resource.image('media/scoreboard.png')           #scoreboard sprite
 scoreboard= pyglet.sprite.Sprite(scoreboard, 18, 619)
 scoreboard.visible=True
 
-bowlsound = pyglet.resource.media("Ball_Return.wav", streaming = False) #sounds to play
-sparesound=pyglet.resource.media("SPARE.wav", streaming = False)
-guttersound=pyglet.resource.media("gutter.wav", streaming = False)
-strikesound=pyglet.resource.media("strike.wav", streaming = False)
-fallsound=pyglet.resource.media("close.wav", streaming = False)
+bowlsound = pyglet.resource.media("media/Ball_Return.wav", streaming = False) #sounds to play
+sparesound=pyglet.resource.media("media/SPARE.wav", streaming = False)
+guttersound=pyglet.resource.media("media/gutter.wav", streaming = False)
+strikesound=pyglet.resource.media("media/strike.wav", streaming = False)
+fallsound=pyglet.resource.media("media/close.wav", streaming = False)
 
 
 
