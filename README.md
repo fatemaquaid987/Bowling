@@ -6,7 +6,7 @@ Bowling is a leisure sport in which a player rolls a ball towards the target. He
 
 ## How to run the code
 Install Python 3.5.  
-Install Pyglet version 1.2.4. 
+Install Pyglet version 1.2.4.   
 Open the python file in your favorite IDE.  
 Hit run to run the project.  
 
